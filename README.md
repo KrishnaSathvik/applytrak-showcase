@@ -313,6 +313,44 @@ ApplyTrak features comprehensive mobile UI improvements for better usability and
 
 ---
 
+## 📧 **Email Notification System**
+
+### **Comprehensive Email Automation**
+ApplyTrak features a sophisticated email notification system with multiple automated email types and user preference management.
+
+#### **Email Types**
+- **Welcome Emails**: Sent after email verification with onboarding guidance
+- **Weekly Goals**: Progress reports and goal tracking reminders (Sundays at 9 AM UTC)
+- **Weekly Tips**: Job search tips and insights (Wednesdays at 10 AM UTC)
+- **Monthly Analytics**: Comprehensive performance reports (1st of every month at 8 AM UTC)
+- **Milestone Celebrations**: Achievement notifications for every 10 applications or 5 interviews
+- **Inactivity Reminders**: Re-engagement campaigns for users inactive for 7, 14, or 30 days
+
+#### **Email Features**
+- **Beautiful Templates**: Professional HTML templates with responsive design
+- **Personalization**: Dynamic content based on user data and activity
+- **Preference Management**: Users can customize which emails they receive
+- **One-Click Settings**: Direct links to email preference management
+- **Analytics Integration**: Email content includes user-specific data and insights
+
+#### **Technical Implementation**
+- **Supabase Edge Functions**: Serverless email processing
+- **Resend API**: Reliable email delivery service
+- **PostgreSQL Cron Jobs**: Automated scheduling with pg_cron extension
+- **User Preferences**: Granular control over email types and frequency
+- **Email Preferences Page**: Dedicated page for managing notification settings
+
+#### **Scheduled Automation**
+```
+Weekly Goals    → Every Sunday at 9 AM UTC
+Weekly Tips     → Every Wednesday at 10 AM UTC
+Monthly Analytics → 1st of every month at 8 AM UTC
+Milestone Check → Every day at 12 PM UTC
+Inactivity Reminders → Every day at 11 AM UTC
+```
+
+---
+
 ## 📊 **Performance & Scalability**
 
 ### **Performance Optimizations**
@@ -520,13 +558,13 @@ ApplyTrak features comprehensive mobile UI improvements for better usability and
 - **Enhanced Bulk Operations**: Cross-page selection and bulk actions
 - **Import Preview**: Sample data preview before confirming imports
 - **Mobile UI**: Optimized mobile header and navigation positioning
+- **Email Notifications**: Comprehensive automated email system with welcome, weekly goals, tips, analytics, milestones, and inactivity reminders
 
 ---
 
 ## 🔮 **Future Roadmap**
 
 ### **Phase 1: Enhanced Features** (Next 3 months)
-- **Email Notifications**: Automated reminders and updates
 - **Advanced Analytics**: Machine learning insights
 - **API Access**: REST API for third-party integrations
 - **Mobile App**: React Native implementation
